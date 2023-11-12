@@ -1,0 +1,8 @@
+To learn how to play, please see the games and subject matter literacy list in the pause menu (esc) and study until stasified.
+
+If you would like an in depth understanding of this game and the relationships between its mechanics, you have three options:
+1 - look up how to play this game online
+2 - put more hours into this game
+3 - attempt to interpret the source code for this game, available at https://github.com/JoshuaKabo/StupidOverwhelmingGame
+
+Now, press R to race to reload.

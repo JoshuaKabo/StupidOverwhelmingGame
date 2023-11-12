@@ -1,0 +1,21 @@
+Some games are played on handheld screens held by up to unlimited arms that persist while in fps mode, others maybe take full control, maybe including racing?
+
+Racing (reloading)
+    opponents beaten can be bullets reloaded
+Pet Manager
+    Tamagotchi
+    10% chance that any other item from any other minigame becomes a Tamagotchi
+Portal Gun
+    Switches the active fps with the game portaled into
+    could be useful in that fps mode might allow you to fix certain broken situations, by use of gmod style tools
+Pokemon Battles
+Crafting
+Farming
+Skill Tree
+    Flappy bird, where if you hit the top pipe the skill goes up, the lower pipe it goes down
+    Platformer that can only be progressed with unlock
+Quantum Entangled Status
+Pipe dream
+Tetris
+Time recorded playback
+Meme viewer

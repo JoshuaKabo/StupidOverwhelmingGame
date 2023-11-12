@@ -1,0 +1,4 @@
+Winnable minigames 
+    Passes back a 0 or 1 for win / lose
+NPC
+    Can be of any type and is interchangable in any game

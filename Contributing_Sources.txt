@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=M48EVxvkwTg - godot pokemon
+https://www.youtube.com/watch?v=LqLchhxMldM - car
+https://docs.godotengine.org/en/3.1/tutorials/3d/fps_tutorial/index.html - fps possibility 1
+Can Browse Gamejam submissions for more MIT licensed possibilities

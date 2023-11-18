@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=3 uid="uid://c8i6wa1t0wld1"]
+
+[ext_resource type="Texture2D" uid="uid://jcvno20a2kau" path="res://Assets/Game_Ready/BG_Dice.jpg" id="1_birtu"]
+[ext_resource type="Texture2D" uid="uid://btnu60c3qfjnx" path="res://Assets/Game_Ready/Titlecard.png" id="2_x58c3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ixlce"]
+font_size = 50
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_41y0b"]
+resource_name = "title_anim"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Title:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_nfqjg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Title:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2, 2)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gnj7v"]
+_data = {
+"RESET": SubResource("Animation_nfqjg"),
+"title_anim": SubResource("Animation_41y0b")
+}
+
+[node name="TitleScreen" type="Node2D"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+
+[node name="BG" type="TextureRect" parent="UI"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_birtu")
+
+[node name="Title" type="TextureRect" parent="UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.45
+anchor_top = 1.075
+anchor_right = 46.9
+anchor_bottom = 20.85
+offset_left = 48.0
+offset_top = 45.0
+offset_right = 1866.0
+offset_bottom = 836.0
+scale = Vector2(2, 2)
+pivot_offset = Vector2(909, 396)
+texture = ExtResource("2_x58c3")
+
+[node name="Label" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 847.0
+offset_top = 912.0
+offset_right = 1108.0
+offset_bottom = 984.0
+text = "Press Start"
+label_settings = SubResource("LabelSettings_ixlce")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UI"]
+autoplay = "title_anim"
+libraries = {
+"": SubResource("AnimationLibrary_gnj7v")
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
